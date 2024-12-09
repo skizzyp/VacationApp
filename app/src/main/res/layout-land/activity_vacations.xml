@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBA8A8"
+    tools:context=".UI.VacationDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="332dp"
+        android:layout_height="202dp"
+        android:backgroundTint="#F27A7A"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="299dp">
+
+
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ExcursionRecyclerView"
+        android:layout_width="256dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintLeft_toRightOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Excursions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExcursionRecyclerView"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ExcursionRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView><![CDATA[
+        />
+
+
+
+        ]]>
+
+        <EditText
+            android:id="@+id/titleEdit"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"></EditText><![CDATA[
+
+        />
+
+        ]]>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+        <EditText
+            android:id="@+id/placeEdit"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+        />
+
+        <EditText
+            android:id="@+id/startEdit"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+        />
+
+        <EditText
+            android:id="@+id/endEdit"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
