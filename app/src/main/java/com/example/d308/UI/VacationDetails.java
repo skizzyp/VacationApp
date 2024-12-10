@@ -194,18 +194,9 @@ public class VacationDetails extends AppCompatActivity {
             if(item.getItemId()==R.id.save) {
                 String dateOfStart = editStart.getText().toString();
                 String dateOfEnd = editEnd.getText().toString();
-                String dateFormat = "MM/dd/yy";
-                SimpleDateFormat sdf = new SimpleDateFormat(dateFormat, Locale.US);
-                Date start = null;
-                Date end = null;
-                try{
-                    start = sdf.parse(dateOfStart);
-                    end = sdf.parse(dateOfEnd);
-                }catch (ParseException e) {
-                    e.printStackTrace();
-                }
 
-                if(start.after(end)){
+
+                if(!com.example.d308.utils.DateUtils.isStartDateBeforeEndDate(dateOfStart, dateOfEnd)){
                     Toast.makeText(VacationDetails.this,"Start date needs to be before end date",Toast.LENGTH_LONG).show();
                 }else{
 
@@ -305,6 +296,7 @@ public class VacationDetails extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     protected void onResume(){
         super.onResume();
