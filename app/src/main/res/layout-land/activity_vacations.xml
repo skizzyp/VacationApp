@@ -21,8 +21,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ExcursionRecyclerView"
-        android:layout_width="256dp"
-        android:layout_height="207dp"
+        android:layout_width="298dp"
+        android:layout_height="201dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.966"
@@ -44,6 +44,7 @@
         app:layout_constraintVertical_bias="0.462" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="371dp"
         android:layout_height="310dp"
         android:orientation="vertical"
@@ -109,5 +110,28 @@
             android:layout_height="wrap_content"></EditText>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:text="Excursion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/ExcursionRecyclerView"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/ExcursionRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
