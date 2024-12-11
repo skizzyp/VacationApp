@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         reportBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                com.example.d308.util.ReportUtil.generateAndSaveReport(MainActivity.this);
+                com.example.d308.util.ReportUtil.generateVacationReport(MainActivity.this);
             }
         });
 
